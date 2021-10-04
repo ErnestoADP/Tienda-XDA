@@ -1,0 +1,99 @@
+/* Add a black background color to the top navigation */
+
+.nav {
+    height: 92px;
+    width: 80%;
+    margin: auto;
+    background-color: $white;
+    position: relative;
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 33px;
+    width: 100px;
+    height: 76px;
+    color: $white;
+    background-color: #0c0910;
+    text-align: center;
+}
+
+.xda {
+    display: block;
+    margin-top: 22px;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav>.nav-links>a {
+    display: inline-block;
+    padding: 25px;
+    text-decoration: none;
+    color: $smokyaBlack;
+    font: caption;
+    font-weight: 600;
+}
+
+.nav>.nav-links>a:hover {
+    background-color: $quickSilver;
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+@media (min-width: 200px) and (max-width: 1100.98px) {
+    .nav {
+        width: 100%;
+    }
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav>.nav-btn>label {
+        display: inline-block;
+        padding: 10px;
+    }
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid rgb(0, 0, 0);
+    }
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: $white;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}

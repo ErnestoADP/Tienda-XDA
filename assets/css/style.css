@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap");
+/*font family*/
+/*Colores */
+/* Add a black background color to the top navigation */
+.nav {
+  height: 92px;
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 33px;
+  width: 100px;
+  height: 76px;
+  color: #fff;
+  background-color: #0c0910;
+  text-align: center;
+}
+
+.xda {
+  display: block;
+  margin-top: 22px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 25px;
+  text-decoration: none;
+  color: #0c0910;
+  font: caption;
+  font-weight: 600;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: #a6a5a8;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (min-width: 200px) and (max-width: 1100.98px) {
+  .nav {
+    width: 100%;
+  }
+
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav > .nav-btn > label {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid black;
+  }
+
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Old Standard TT", serif;
+}
+
+footer {
+  padding-top: 7px;
+  height: 100px;
+  background-color: #ececec;
+}
+footer .texto-footer {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+section {
+  display: inline-block;
+}
+
+.caja_principal {
+  width: 80%;
+  margin: auto;
+}
+.caja_principal h1 {
+  font-size: 60px;
+  font-weight: 600;
+  width: 80%;
+  padding: 55px 0px 10px 60px;
+}
+.caja_principal p {
+  padding: 0px 0px 15px 60px;
+  width: 60%;
+  color: #646266;
+  font: caption;
+  line-height: 25px;
+}
+.caja_principal .boton {
+  padding: 0px 0px 60px 60px;
+}
+
+.caja_secundaria {
+  width: 30%;
+  float: left;
+  display: block;
+}
+
+.caja_secundaria-dos {
+  width: 60%;
+  float: right;
+  display: block;
+}
+.caja_secundaria-dos img {
+  width: 100%;
+  height: 730px;
+}
+
+.arreglo {
+  width: 100%;
+}
+.arreglo .tercera-caja {
+  float: left;
+  display: block;
+  background-color: #0c0910;
+  width: 95%;
+  height: 200px;
+}
+.arreglo .tercera-caja h3 {
+  color: #fff;
+  width: 50%;
+  font-size: 30px;
+  padding: 20px 0px 15px 60px;
+}
+.arreglo .tercera-caja .texto {
+  padding: 20px 0px 15px 0px;
+  color: #fff;
+}
+.arreglo .sub {
+  float: right;
+  display: block;
+  width: 4%;
+  height: 200px;
+  writing-mode: vertical-rl;
+  text-align: center;
+}
+.arreglo .texto_pa {
+  font: caption;
+  font-weight: 600;
+}
+
+@media (min-width: 200px) and (max-width: 1100.98px) {
+  .caja_secundaria-dos {
+    width: 100%;
+    margin: auto;
+    background-position: 0% 30%;
+  }
+  .caja_secundaria-dos img {
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+  }
+
+  .caja_secundaria {
+    width: 100%;
+    margin: auto;
+  }
+
+  .caja_principal {
+    width: 100%;
+  }
+}
+button {
+  width: 40%;
+  color: #0c0910;
+  font: caption;
+  line-height: 25px;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.input {
+  padding: 0px 0px 0px 60px;
+}
+
+input {
+  padding: 10px 0px 10px 60px;
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
